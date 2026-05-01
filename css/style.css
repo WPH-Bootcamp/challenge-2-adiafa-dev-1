@@ -1,1 +1,462 @@
-/* code-here */
+/* Normalized CSS */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body {
+  background-color: #000;
+  color: #fdfdfd;
+  font-family: 'Inter', sans-serif;
+}
+
+.grey-text {
+  color: #717680;
+}
+
+.whiteText {
+  color: #fdfdfd;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+button {
+  background-color: #421abc;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 42px;
+  color: #fdfdfd;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.25em;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  color: #717680;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+/* header section */
+header .container {
+  height: 84px;
+  align-items: center;
+}
+
+.top-logo-wrapper {
+  flex-basis: 25%;
+  font-weight: 700;
+}
+
+a.top-logo {
+  margin-left: 2em;
+  font-size: 1.5em;
+}
+
+.top-logo-wrapper a,
+.top-logo-wrapper a:hover {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+.top-right-section {
+  flex-basis: 75%;
+  display: flex;
+  align-items: center;
+}
+
+/* top nav section */
+.small-nav {
+  text-align: right;
+  display: none;
+}
+
+.top-nav-wrapper {
+  flex-basis: 60%;
+}
+
+ul.top-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  gap: 0.75em;
+  font-size: 1em;
+}
+
+ul.top-nav li a {
+  text-decoration: none;
+  color: #fdfdfd;
+  padding: 0px 15px;
+}
+
+ul.top-nav li a:hover {
+  text-decoration: none;
+  color: #421abc;
+}
+
+.top-contact-wrapper {
+  flex-basis: 40%;
+  text-align: right;
+}
+
+/* heroes section */
+#heroesSection {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 2, 43, 1) 100%);
+}
+
+#heroesSection .container {
+  /* background: url('../assets/images/hero-hand.png') no-repeat right bottom; */
+  min-height: 750px;
+}
+
+.left-heroes {
+  align-self: center;
+  width: 55%;
+}
+
+.right-heroes {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-heroes img {
+  width: 100%;
+}
+
+button.btn-heroes {
+  padding: 8px 115px;
+}
+
+/* who we are section */
+#whoSection .container {
+  padding: 45px 0 80px;
+}
+
+.who-we-are {
+  text-align: center;
+}
+
+/* what we do section */
+#whatSection .container {
+  padding: 0 0 80px;
+}
+
+#whatSection .container {
+  flex-direction: column;
+}
+
+.what-we-do-top {
+  text-align: center;
+  width: 100%;
+}
+
+.what-we-do-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 25px;
+  border: 1px solid #181d27;
+  border-radius: 15px;
+  align-self: stretch;
+}
+
+.card-desc p,
+.team-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* work section */
+#workSection .container {
+  padding: 0 0 80px;
+}
+
+#workSection .container {
+  flex-direction: column;
+}
+
+.work-top {
+  text-align: center;
+  width: 100%;
+}
+
+.work-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 20px;
+}
+
+.work-bottom .porto-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.work-bottom .porto-title h5 {
+  margin: 8px 0;
+}
+
+/* team section */
+#teamSection .container {
+  padding: 0 0 80px;
+}
+
+#teamSection .container {
+  flex-direction: column;
+}
+
+.team-top {
+  text-align: center;
+  width: 100%;
+}
+
+.team-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.team-bottom .team-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-bottom .team-name h5 {
+  margin-bottom: 0px;
+}
+
+/* contact form section */
+#contactFormSection .container {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 80px;
+}
+
+.contact-top {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-form-wrapper {
+  width: 600px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: none;
+  border: 1px solid #252b37;
+  border-radius: 15px;
+  line-height: 46px;
+  padding: 0 10px;
+  margin: 15px 0 30px;
+}
+
+/* footer section */
+footer {
+  border: 1px solid #181d27;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+footer .container {
+  justify-content: center;
+}
+
+/* responsive for smartphone */
+@media only screen and (max-width: 768px) {
+  body > * {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* header section */
+  header .container {
+    justify-content: space-between;
+  }
+
+  a.top-logo {
+    margin-left: 0;
+  }
+
+  /* top nav section */
+  .small-nav {
+    display: flex;
+  }
+
+  .top-right-section {
+    display: none;
+  }
+
+  .small-nav:hover ~ .top-right-section {
+    display: block;
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    left: 0;
+    background: #000;
+  }
+
+  ul.top-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  ul.top-nav li a {
+    font-size: 14px;
+  }
+
+  .top-contact-wrapper {
+    text-align: center;
+    padding: 0 20px 20px;
+  }
+
+  button.btn-contact {
+    width: 100%;
+  }
+
+  /* heroes section */
+  #heroesSection .container {
+    flex-direction: column;
+  }
+
+  .left-heroes {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  button.btn-heroes {
+    width: 100%;
+  }
+
+  .right-heroes {
+    width: 100%;
+  }
+
+  /* who section */
+  #whoSection .container,
+  #whatSection .container,
+  #workSection .container,
+  #teamSection .container {
+    padding-bottom: 60px;
+  }
+
+  /* what we do section */
+  .what-we-do-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* work section */
+  .work-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  /* team section */
+  .team-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* contact form section */
+  .contact-form-wrapper {
+    width: 100%;
+  }
+
+  #contactFormSection .container {
+    padding-bottom: 40px;
+  }
+
+  /* footer section */
+  footer p {
+    font-size: 12px;
+  }
+}
